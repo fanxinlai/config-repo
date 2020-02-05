@@ -1,4 +1,4 @@
 server:
-  port:8886
+  port: 8886
 env:
-  test
+  dev
