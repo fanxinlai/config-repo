@@ -1,0 +1,24 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: order
+
+eureka:
+  instance:
+    hostname: localhost           #表示设置该服务注册中心的hostname
+  client:
+    serviceurl:
+      ##defaultZone: http://localhost:9999/eureka/
+      defaultZone: http://fanxinlai:666666@localhost:9999/eureka/
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 10000
+        read-timeout: 20000
+      service-test:
+        connect-timeout: 10000
+        read-timeout: 20000
+env:
+  dev        
