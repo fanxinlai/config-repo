@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: zuul
+
+eureka:
+  instance:
+    hostname: localhost           #表示设置该服务注册中心的hostname
+  client:
+    serviceurl:
+      ##defaultZone: http://localhost:9999/eureka/
+      defaultZone: http://fanxinlai:666666@localhost:9999/eureka/
