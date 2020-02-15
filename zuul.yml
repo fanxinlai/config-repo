@@ -9,3 +9,14 @@ eureka:
     serviceurl:
       ##defaultZone: http://localhost:9999/eureka/
       defaultZone: http://fanxinlai:666666@localhost:9999/eureka/
+zuul:
+  routes:
+    #自定义路由
+#    myOrder:
+#      path: /myOrder/**
+#      serviceId: order
+    #自定义路由简洁写法
+    order: /myOrder/**
+  #限制路由
+  ignored-patterns:
+    - /order/test/order   #set写法配置
