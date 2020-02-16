@@ -1,9 +1,6 @@
 spring:
   application:
     name: order
-  main:
-    allow-bean-definition-overriding: true
-
 eureka:
   instance:
     hostname: localhost           #表示设置该服务注册中心的hostname
